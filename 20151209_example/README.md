@@ -55,6 +55,3 @@ ___________
     - https://github.com/cleder/czml
 * czml 0.3.2
     - https://pypi.python.org/pypi/czml/
-
-### CZML-Content
-
