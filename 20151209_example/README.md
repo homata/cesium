@@ -5,7 +5,7 @@ ___________
 * Cesium
     - http://cesiumjs.org/
 * Cesium GitHub
-    – https://github.com/AnalyticalGraphicsInc/cesium
+    - https://github.com/AnalyticalGraphicsInc/cesium
 
 * [Cesium Document](http://cesiumjs.org/tutorials.html)
 * [Code Examples](http://cesiumjs.org/Cesium/Apps/Sandcastle/index.html)
@@ -24,10 +24,10 @@ ___________
 
 ### CZML
 * CZML Guide
-    – https://github.com/AnalyticalGraphicsInc/cesium/wiki/czml-guide
+    - https://github.com/AnalyticalGraphicsInc/cesium/wiki/czml-guide
 
 * [CZML Structure – CZMLの構造](https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Structure)
-* [CZML Content – CZMLの内容(プロパティ)](https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Content]
+* [CZML Content – CZMLの内容(プロパティ)](https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-Content)
     - [表示エラーが出る場合：PDF変換したものをここに置きておきます](https://www.dropbox.com/s/vrchdft6abf73kd/czml-contents.pdf?dl=0)
 * [CZML in Cesium – CesiumとCZMLについて](https://github.com/AnalyticalGraphicsInc/cesium/wiki/CZML-in-Cesium)
 * [czml-writer Architecture –　CZML作成ツール](https://github.com/AnalyticalGraphicsInc/czml-writer/wiki)
