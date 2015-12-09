@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>002-1</title>
+    <script src="./Cesium/Cesium.js"></script>
+    <style>
+    @import url(./Cesium/Widgets/widgets.css);
+      html, body, #cesiumContainer {
+          width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+      }
+    </style>
+  </head>
+<body>
+  <div id="cesiumContainer"></div>
+  <script>
+    var czml = [
+        {
+            "id" : "document",
+            "name" : "002-1",
+            "version" : "1.0"
+        }, {
+            "id" : "002-1",
+            "name" : "実習",
+            "description" : "<p><a href='http://cesiumjs.org/' target='_blank'>Cesium Website</a> CZML example</p>",
+            "billboard" : {
+            "image" : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAA0CAYAAADrPTp5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYFJREFUeNrslztOw0AQhhdrCwRIpKIBCTgBN4AjgKiRSEULDTVHiFtoMBItsL4BcIJQQgFOgcSjCCiFk0ix+QftSlZEyHMnzYz0e9aWrPm8M7PrVXmeK9L71emaG3MqULCP67My3Iv1rDZDX07BC8/Wl3YPEi6AgII1s84x3ZDnDP4LQJfHtLHwlDbUc/1z5XVvc4cTQLtBmnXUbLtVwvAGEDV4A0XLl/dVFoAuW4UOSYB5IBAL8+UlBX1sA6pAdcAYqMwxA71smwSI0KYoHDdFesT3FqF9kq0Xl6KEC6C7Xk5IgLmzMGbQegkmXFNb0Lmtl2iQltYeO6yYop4trRnWmn9bmgPgr5auACaGP+IGIKsVWjjhBLiw3WE4a6DvMu4D4LsQtMrZhrENajhXwrF3Sj3iFE9kIxoWILZVHHFux9SzoQ3s5V9R+57ioQDac/NvCFpi/yt2lmnd5F6XAzVlEwABEAABEAABEAABEAABEICpA7iTER04b6GEG+BHgAEAYhP0sTWf634AAAAASUVORK5CYII=",
+            "scale" : 1.5
+        },
+            "label" : {
+            "fillColor" : {
+                "rgba" : [255, 255, 255, 255]
+            },
+            "font" : "11pt Lucida Console",
+            "horizontalOrigin" : "LEFT",
+            "outlineColor" : {
+                "rgba":[0, 0, 0, 255]
+            },
+            "outlineWidth" : 2,
+            "pixelOffset" : {
+                "cartesian2" : [12, 0]
+            },
+            "style" : "FILL_AND_OUTLINE",
+            "text" : "CZML Demo"
+        },
+            "position" : {
+                "cartographicDegrees" : [139.678167, 35.661989, 0 ]
+            }
+        }
+    ];
+    var viewer = new Cesium.Viewer('cesiumContainer');
+    var datasource = Cesium.CzmlDataSource.load(czml);
+    viewer.dataSources.add(datasource);
+    viewer.zoomTo(datasource);
+  </script>
+</body>
+</html>

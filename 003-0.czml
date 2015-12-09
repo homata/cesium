@@ -1,0 +1,40 @@
+[
+    {
+        "id":"document",
+        "name":"003",
+        "version":"1.0",
+        "clock":{
+            "interval":"1990/2015",
+            "currentTime":"1990",
+            "multiplier":15768000,
+            "range":"LOOP_STOP",
+            "step":"SYSTEM_CLOCK_MULTIPLIER"
+        }
+    },
+
+    {
+        "polygon":{
+            "positions":{
+                "cartographicDegrees":[
+                    139.666084, 35.581382, 0,
+                    139.666084, 35.781382, 0,
+                    139.866084, 35.781382, 0,
+                    139.866084, 35.581382, 0,
+                    139.666084, 35.581382, 0
+                ]
+            },
+            "material":{
+                "solidColor":{
+                    "color":{
+                        "rgba":[255,0,0,255]
+                    }
+                }
+            },
+            "fill":true,
+            "extrudedHeight" : 0,
+            "height" : {
+              "number": 5000
+            }
+        }
+    }
+]

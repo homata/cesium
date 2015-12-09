@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>004</title>
+    <script src="./Cesium/Cesium.js"></script>
+    <style>
+    @import url(./Cesium/Widgets/widgets.css);
+      html, body, #cesiumContainer {
+          width: 100%; height: 100%; margin: 0; padding: 0; overflow: hidden;
+      }
+    </style>
+  </head>
+<body>
+  <div id="cesiumContainer"></div>
+  <script>
+    // ビュー設定
+    var viewer = new Cesium.Viewer('cesiumContainer', {
+        sceneMode:Cesium.SceneMode.SCENE2D  // 2d表示モード
+    });
+
+    // CZMLファイル読み込み
+    var datasource = Cesium.CzmlDataSource.load('./004.czml');
+    viewer.dataSources.add(datasource);
+
+    // デフォルトの地図を選択 (11番目の地図)
+    var baseLayerPickerViewModel = viewer.baseLayerPicker.viewModel;
+    baseLayerPickerViewModel.selectedImagery = baseLayerPickerViewModel.imageryProviderViewModels[11];
+
+    // アニメーション付きズーム
+    var longitude = 139.573468;
+    var latitude  = 35.593943;
+    var height    = 20000;
+    viewer.camera.flyTo({
+        destination : Cesium.Cartesian3.fromDegrees(longitude, latitude, height)
+    });
+  </script>
+</body>
+</html>
