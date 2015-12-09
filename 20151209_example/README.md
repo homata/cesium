@@ -55,3 +55,11 @@ ___________
     - https://github.com/cleder/czml
 * czml 0.3.2
     - https://pypi.python.org/pypi/czml/
+
+
+ライセンス
+------------
+* tokyo23.geojson: 国土数値情報　行政区域データ
+    - http://nlftp.mlit.go.jp/ksj/gml/datalist/KsjTmplt-N03.html
+* simple.czml:  Cesium GitHub sample code
+    - https://github.com/AnalyticalGraphicsInc/cesium
